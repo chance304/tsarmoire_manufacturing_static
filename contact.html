@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Tsarmoire Manufacturing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Tsarmoire Mfg.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="capabilities.html">Capabilities</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-secondary" style="padding-top: calc(var(--spacing-xl) + 60px);">
+        <div class="container text-center">
+            <h1>Get in Touch</h1>
+            <p>Start your production journey with us today.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2>Contact Information</h2>
+                    <div class="card" style="margin-top: 2rem;">
+                        <h3>Head Office & Factory</h3>
+                        <p>Kathmandu, Nepal</p>
+                        <p style="margin-top: 1rem;"><strong>Phone:</strong> +977-9800000000</p>
+                        <p><strong>Email:</strong> info@tsarmoire.com</p>
+                        <p><strong>Hours:</strong> Sun - Fri, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <form class="card">
+                    <h3>Request a Quote</h3>
+                    <div class="form-group">
+                        <label for="c-name">Company Name</label>
+                        <input type="text" id="c-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="c-person">Contact Person</label>
+                        <input type="text" id="c-person">
+                    </div>
+                    <div class="form-group">
+                        <label for="c-email">Email Address</label>
+                        <input type="email" id="c-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="c-qty">Estimated Quantity</label>
+                        <select id="c-qty">
+                            <option>Less than 100</option>
+                            <option>100 - 500</option>
+                            <option>500 - 1000</option>
+                            <option>1000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-msg">Project Details</label>
+                        <textarea id="c-msg" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="text-center" style="color: #666;">&copy; 2026 Tsarmoire Manufacturing.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
