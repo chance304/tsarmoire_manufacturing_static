@@ -4,24 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tsarmoire Manufacturing for garment production inquiries. Request a quote for women's wear contract manufacturing from Nepal.">
+    <meta property="og:title" content="Contact Us | Tsarmoire Manufacturing">
+    <meta property="og:description" content="Start your production journey with us. Request a quote for premium women's wear manufacturing.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://tsarmoiremanufacturing.com.np/contact.html">
     <title>Contact Us | Tsarmoire Manufacturing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header role="banner">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Tsarmoire Mfg.</a>
-            <div class="hamburger">
+            <a href="index.html" class="logo">Tsarmoire</a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
-            <nav>
+            </button>
+            <nav aria-label="Primary navigation">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -34,66 +42,112 @@
         </div>
     </header>
 
-    <section class="bg-secondary" style="padding-top: calc(var(--spacing-xl) + 60px);">
-        <div class="container text-center">
-            <h1>Get in Touch</h1>
-            <p>Start your production journey with us today.</p>
-        </div>
-    </section>
+    <main id="main">
 
-    <section>
-        <div class="container">
-            <div class="grid-2">
-                <div>
-                    <h2>Contact Information</h2>
-                    <div class="card" style="margin-top: 2rem;">
-                        <h3>Head Office & Factory</h3>
-                        <p>Kathmandu, Nepal</p>
-                        <p style="margin-top: 1rem;"><strong>Phone:</strong> +977-9800000000</p>
-                        <p><strong>Email:</strong> info@tsarmoire.com</p>
-                        <p><strong>Hours:</strong> Sun - Fri, 9:00 AM - 6:00 PM</p>
-                    </div>
-                </div>
-                <form class="card">
-                    <h3>Request a Quote</h3>
-                    <div class="form-group">
-                        <label for="c-name">Company Name</label>
-                        <input type="text" id="c-name">
-                    </div>
-                    <div class="form-group">
-                        <label for="c-person">Contact Person</label>
-                        <input type="text" id="c-person">
-                    </div>
-                    <div class="form-group">
-                        <label for="c-email">Email Address</label>
-                        <input type="email" id="c-email">
-                    </div>
-                    <div class="form-group">
-                        <label for="c-qty">Estimated Quantity</label>
-                        <select id="c-qty">
-                            <option>Less than 100</option>
-                            <option>100 - 500</option>
-                            <option>500 - 1000</option>
-                            <option>1000+</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="c-msg">Project Details</label>
-                        <textarea id="c-msg" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
-                </form>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <span class="label-text">Let's Connect</span>
+                <h1>Get in Touch</h1>
+                <p>Start your production journey with us today.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <!-- Contact Content -->
+        <section>
+            <div class="container">
+                <div class="grid-2">
+                    <div class="reveal">
+                        <span class="label-text">Contact Information</span>
+                        <h2>Head Office &amp; Factory</h2>
+                        <div class="card" style="margin-top: var(--space-md);">
+                            <p style="margin-bottom: var(--space-md);"><strong>Address:</strong><br>Kathmandu, Nepal</p>
+                            <p><strong>Phone:</strong> +977-9800000000</p>
+                            <p><strong>Email:</strong> <a href="mailto:info@tsarmoire.com" style="color: var(--color-gold);">info@tsarmoire.com</a></p>
+                            <p style="margin-bottom: 0;"><strong>Hours:</strong> Sun &ndash; Fri, 9:00 AM &ndash; 6:00 PM (NPT)</p>
+                        </div>
+                    </div>
+                    <form class="card reveal" id="contact-form" novalidate>
+                        <h3 style="margin-bottom: var(--space-md);">Request a Quote</h3>
+                        <div class="form-group">
+                            <label for="c-name">Company Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="c-name" name="company" placeholder="Your company name" required>
+                            <span class="form-error" id="c-name-error">Please enter your company name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-person">Contact Person <span aria-hidden="true">*</span></label>
+                            <input type="text" id="c-person" name="person" placeholder="Your name" required>
+                            <span class="form-error" id="c-person-error">Please enter a contact person.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" id="c-email" name="email" placeholder="you@company.com" required>
+                            <span class="form-error" id="c-email-error">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-qty">Estimated Quantity</label>
+                            <select id="c-qty" name="quantity">
+                                <option value="">Select quantity range</option>
+                                <option value="<100">Less than 100</option>
+                                <option value="100-500">100 &ndash; 500</option>
+                                <option value="500-1000">500 &ndash; 1,000</option>
+                                <option value="1000+">1,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-msg">Project Details</label>
+                            <textarea id="c-msg" name="details" rows="5" placeholder="Tell us about your production needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                        <div class="form-success" id="contact-success">Thank you! Your request has been submitted. We'll get back to you within 48 hours.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="container">
-            <p class="text-center" style="color: #666;">&copy; 2026 Tsarmoire Manufacturing.</p>
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">Tsarmoire</a>
+                    <p>Your premier partner for women's wear manufacturing. Delivering quality, sustainability, and reliability to the global fashion industry.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="capabilities.html">Capabilities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Dresses</a></li>
+                        <li><a href="products.html">Tops &amp; Blouses</a></li>
+                        <li><a href="products.html">Co-ord Sets</a></li>
+                        <li><a href="products.html">Private Label</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Tsarmoire Manufacturing. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -4,24 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Tsarmoire Manufacturing's product portfolio - dresses, tops & blouses, co-ord sets, ethnic wear, and custom designs. Premium women's wear manufacturing.">
+    <meta property="og:title" content="Products | Tsarmoire Manufacturing">
+    <meta property="og:description" content="Showcasing our expertise across various women's wear categories. Dresses, tops, co-ord sets, and custom designs.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://tsarmoiremanufacturing.com.np/products.html">
     <title>Products | Tsarmoire Manufacturing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header role="banner">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Tsarmoire Mfg.</a>
-            <div class="hamburger">
+            <a href="index.html" class="logo">Tsarmoire</a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
-            <nav>
+            </button>
+            <nav aria-label="Primary navigation">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -34,68 +42,127 @@
         </div>
     </header>
 
-    <section class="bg-secondary" style="padding-top: calc(var(--spacing-xl) + 60px);">
-        <div class="container text-center">
-            <h1>Product Portfolio</h1>
-            <p>Showcasing our expertise across various women's wear categories.</p>
-        </div>
-    </section>
+    <main id="main">
 
-    <section>
-        <div class="container">
-            <!-- Dresses -->
-            <div class="grid-2" style="margin-bottom: var(--spacing-lg);">
-                <div
-                    style="background: #eee; height: 400px; display: flex; align-items: center; justify-content: center;">
-                    Dresses Image
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <span class="label-text">Our Work</span>
+                <h1>Product Portfolio</h1>
+                <p>Showcasing our expertise across various women's wear categories.</p>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section>
+            <div class="container">
+
+                <!-- Dresses -->
+                <div class="grid-2 align-center product-row reveal">
+                    <div class="img-placeholder img-placeholder-md" style="border-radius: var(--radius-md);" role="img" aria-label="Collection of women's dresses manufactured by Tsarmoire">
+                        Dresses Collection
+                    </div>
+                    <div>
+                        <span class="label-text">Category</span>
+                        <h2>Dresses</h2>
+                        <p>From breezy summer sundresses to structured evening wear. Our team excels in handling delicate fabrics like chiffon, silk, and georgette as well as structured cottons and linens.</p>
+                        <ul class="product-list">
+                            <li>Maxi, Midi, Mini styles</li>
+                            <li>Wrap dresses, Shift dresses</li>
+                            <li>Embroidery and embellishment capabilities</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h2>Dresses</h2>
-                    <p>From breezy summer sundresses to structured evening wear. Our team excels in handling delicate
-                        fabrics like chiffon, silk, and georgette as well as structured cottons and linens.</p>
-                    <ul style="margin-top: 1rem;">
-                        <li>Maxi, Midi, Mini styles</li>
-                        <li>Wrap dresses, Shift dresses</li>
-                        <li>Embroidery and embellishment capabilities</li>
+
+                <!-- Tops -->
+                <div class="grid-2 align-center product-row reverse reveal">
+                    <div class="img-placeholder img-placeholder-md" style="border-radius: var(--radius-md);" role="img" aria-label="Collection of women's tops and blouses">
+                        Tops &amp; Blouses
+                    </div>
+                    <div>
+                        <span class="label-text">Category</span>
+                        <h2>Tops &amp; Blouses</h2>
+                        <p>Precise stitching for collars, cuffs, and plackets. We produce high-quality shirts and blouses suitable for both casual and formal office wear.</p>
+                        <ul class="product-list">
+                            <li>Casual and formal styles</li>
+                            <li>Premium fabric options</li>
+                            <li>Custom collar and cuff designs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Co-ords -->
+                <div class="grid-2 align-center product-row reveal">
+                    <div class="img-placeholder img-placeholder-md" style="border-radius: var(--radius-md);" role="img" aria-label="Collection of co-ord sets">
+                        Co-ord Sets
+                    </div>
+                    <div>
+                        <span class="label-text">Category</span>
+                        <h2>Co-ord Sets</h2>
+                        <p>Trendy two-piece sets that are taking over the fashion world. Perfect color matching and consistent sizing across top and bottom pieces.</p>
+                        <ul class="product-list">
+                            <li>Loungewear and streetwear sets</li>
+                            <li>Perfect color and pattern matching</li>
+                            <li>Consistent sizing across pieces</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section-dark">
+            <div class="container text-center reveal">
+                <h2>Have a design in mind?</h2>
+                <p>We manufacture custom designs for private label brands worldwide.</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: var(--space-md);">Request a Quote</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">Tsarmoire</a>
+                    <p>Your premier partner for women's wear manufacturing. Delivering quality, sustainability, and reliability to the global fashion industry.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="capabilities.html">Capabilities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Dresses</a></li>
+                        <li><a href="products.html">Tops &amp; Blouses</a></li>
+                        <li><a href="products.html">Co-ord Sets</a></li>
+                        <li><a href="products.html">Private Label</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
-
-            <!-- Tops -->
-            <div class="grid-2" style="direction: rtl; margin-bottom: var(--spacing-lg);">
-                <div
-                    style="background: #eee; height: 400px; display: flex; align-items: center; justify-content: center;">
-                    Tops Image
-                </div>
-                <div style="direction: ltr;">
-                    <h2>Tops & Blouses</h2>
-                    <p>Precise stitching for collars, cuffs, and plackets. We produce high-quality shirts and blouses
-                        suitable for both casual and formal office wear.</p>
-                </div>
+            <div class="copyright">
+                <p>&copy; 2026 Tsarmoire Manufacturing. All rights reserved.</p>
             </div>
-
-            <!-- Co-ords -->
-            <div class="grid-2">
-                <div
-                    style="background: #eee; height: 400px; display: flex; align-items: center; justify-content: center;">
-                    Co-ords Image
-                </div>
-                <div>
-                    <h2>Co-ord Sets</h2>
-                    <p>Trendy two-piece sets that are taking over the fashion world. Perfect color matching and
-                        consistent sizing across top and bottom pieces.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p class="text-center" style="color: #666;">&copy; 2026 Tsarmoire Manufacturing.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

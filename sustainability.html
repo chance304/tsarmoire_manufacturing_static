@@ -4,24 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tsarmoire Manufacturing's sustainability commitment - ethical labor practices, waste reduction, and eco-friendly material sourcing for responsible garment production.">
+    <meta property="og:title" content="Sustainability | Tsarmoire Manufacturing">
+    <meta property="og:description" content="Responsible manufacturing for a better future. Ethical labor, waste reduction, and sustainable material sourcing.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://tsarmoiremanufacturing.com.np/sustainability.html">
     <title>Sustainability | Tsarmoire Manufacturing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header role="banner">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Tsarmoire Mfg.</a>
-            <div class="hamburger">
+            <a href="index.html" class="logo">Tsarmoire</a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
-            <nav>
+            </button>
+            <nav aria-label="Primary navigation">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -34,45 +42,119 @@
         </div>
     </header>
 
-    <section class="bg-secondary" style="padding-top: calc(var(--spacing-xl) + 60px);">
-        <div class="container text-center">
-            <h1>Sustainability Commitment</h1>
-            <p>Responsible manufacturing for a better future.</p>
-        </div>
-    </section>
+    <main id="main">
 
-    <section>
-        <div class="container">
-            <div class="grid-3">
-                <div class="text-center">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌱</div>
-                    <h3>Ethical Labor</h3>
-                    <p>We strictly adhere to fair wage policies, safe working conditions, and no child labor. Our
-                        workforce is our greatest asset.</p>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <span class="label-text">Our Responsibility</span>
+                <h1>Sustainability Commitment</h1>
+                <p>Responsible manufacturing for a better future.</p>
+            </div>
+        </section>
+
+        <!-- Pillars -->
+        <section aria-labelledby="pillars-heading">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="label-text">Our Pillars</span>
+                    <h2 id="pillars-heading">How We Make a Difference</h2>
+                    <div class="divider divider-center"></div>
                 </div>
-                <div class="text-center">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">♻️</div>
-                    <h3>Waste Reduction</h3>
-                    <p>We implement strict cutting-floor protocols to minimize fabric waste. Scraps are upcycled or
-                        recycled wherever possible.</p>
-                </div>
-                <div class="text-center">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
-                    <h3>Material Sourcing</h3>
-                    <p>We prioritize suppliers who use eco-friendly dyes and organic fibers. We can provide certified
-                        organic cotton options upon request.</p>
+                <div class="grid-3 reveal reveal-stagger" style="margin-top: var(--space-xl);">
+                    <div class="pillar">
+                        <span class="pillar-icon" aria-hidden="true">&#127793;</span>
+                        <h3>Ethical Labor</h3>
+                        <p>We strictly adhere to fair wage policies, safe working conditions, and no child labor. Our workforce is our greatest asset.</p>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-icon" aria-hidden="true">&#9851;&#65039;</span>
+                        <h3>Waste Reduction</h3>
+                        <p>We implement strict cutting-floor protocols to minimize fabric waste. Scraps are upcycled or recycled wherever possible.</p>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-icon" aria-hidden="true">&#127758;</span>
+                        <h3>Material Sourcing</h3>
+                        <p>We prioritize suppliers who use eco-friendly dyes and organic fibers. We can provide certified organic cotton options upon request.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <!-- Commitment Details -->
+        <section class="section-cream">
+            <div class="container">
+                <div class="grid-2 align-center reveal">
+                    <div>
+                        <span class="label-text">Our Promise</span>
+                        <h2>Building a Sustainable Supply Chain</h2>
+                        <p>We understand that sustainability is not a destination but a journey. We are continuously improving our processes to reduce our environmental footprint while maintaining the highest standards of quality and ethics.</p>
+                        <ul class="check-list">
+                            <li>Regular third-party audits of labor practices</li>
+                            <li>Annual waste reduction targets and reporting</li>
+                            <li>Partnership with certified organic suppliers</li>
+                            <li>Energy-efficient machinery and production lines</li>
+                        </ul>
+                    </div>
+                    <div class="img-placeholder img-placeholder-sm" style="border-radius: var(--radius-md);" role="img" aria-label="Sustainable practices in our manufacturing facility">
+                        Sustainability Practices
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section-dark">
+            <div class="container text-center reveal">
+                <h2>Want to know more about our practices?</h2>
+                <p>We're happy to share our sustainability reports and certifications.</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: var(--space-md);">Contact Us</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="container">
-            <p class="text-center" style="color: #666;">&copy; 2026 Tsarmoire Manufacturing.</p>
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">Tsarmoire</a>
+                    <p>Your premier partner for women's wear manufacturing. Delivering quality, sustainability, and reliability to the global fashion industry.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="capabilities.html">Capabilities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Dresses</a></li>
+                        <li><a href="products.html">Tops &amp; Blouses</a></li>
+                        <li><a href="products.html">Co-ord Sets</a></li>
+                        <li><a href="products.html">Private Label</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Tsarmoire Manufacturing. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -4,25 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Tsarmoire Manufacturing - our story, mission, vision, and values. A legacy of quality in premium women's garment manufacturing from Nepal.">
+    <meta property="og:title" content="About Us | Tsarmoire Manufacturing">
+    <meta property="og:description" content="Founded to bring Nepal's craftsmanship to the global stage. Premier B2B partner for international fashion brands.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://tsarmoiremanufacturing.com.np/about.html">
     <title>About Us | Tsarmoire Manufacturing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <!-- Header -->
-    <header>
+    <header role="banner">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Tsarmoire Mfg.</a>
-            <div class="hamburger">
+            <a href="index.html" class="logo">Tsarmoire</a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
-            <nav>
+            </button>
+            <nav aria-label="Primary navigation">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
@@ -35,61 +42,68 @@
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="bg-secondary" style="padding-top: calc(var(--spacing-xl) + 60px);">
-        <div class="container text-center">
-            <h1>About Tsarmoire</h1>
-            <p>A legacy of quality in women's garment manufacturing.</p>
-        </div>
-    </section>
+    <main id="main">
 
-    <!-- Main Content -->
-    <section>
-        <div class="container">
-            <div class="grid-2">
-                <div>
-                    <h2>Our Story</h2>
-                    <p>Founded with a vision to bring Nepal's craftsmanship to the global stage, Tsarmoire Manufacturing
-                        has evolved into a premier B2B partner for international fashion brands. We combine traditional
-                        expertise with modern industrial efficiency.</p>
-                    <p>Our facility is designed to handle diverse order volumes while maintaining strict quality
-                        control, ensuring that every piece that leaves our factory meets global export standards.</p>
-                </div>
-                <div
-                    style="background: #eee; height: 300px; display: flex; align-items: center; justify-content: center;">
-                    Factory Image Placeholder
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <span class="label-text">Our Company</span>
+                <h1>About Tsarmoire</h1>
+                <p>A legacy of quality in women's garment manufacturing.</p>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section aria-labelledby="story-heading">
+            <div class="container">
+                <div class="grid-2 align-center reveal">
+                    <div>
+                        <span class="label-text">Our Story</span>
+                        <h2 id="story-heading">From Nepal to the World</h2>
+                        <p>Founded with a vision to bring Nepal's craftsmanship to the global stage, Tsarmoire Manufacturing has evolved into a premier B2B partner for international fashion brands. We combine traditional expertise with modern industrial efficiency.</p>
+                        <p>Our facility is designed to handle diverse order volumes while maintaining strict quality control, ensuring that every piece that leaves our factory meets global export standards.</p>
+                    </div>
+                    <div class="img-placeholder img-placeholder-sm" style="border-radius: var(--radius-md);" role="img" aria-label="Tsarmoire manufacturing facility">
+                        Factory Interior
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bg-secondary">
-        <div class="container">
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Our Mission</h3>
-                    <p>To provide sustainable, high-quality manufacturing solutions that empower fashion brands to scale
-                        effectively.</p>
+        <!-- Mission, Vision, Values -->
+        <section class="section-cream" aria-labelledby="values-heading">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="label-text">What Drives Us</span>
+                    <h2 id="values-heading">Mission, Vision &amp; Values</h2>
+                    <div class="divider divider-center"></div>
                 </div>
-                <div class="card">
-                    <h3>Our Vision</h3>
-                    <p>To be the most trusted garment manufacturing partner in South Asia for premium women's wear.</p>
-                </div>
-                <div class="card">
-                    <h3>Our Values</h3>
-                    <p>Integrity, Quality, Sustainability, and Innovation in every stitch.</p>
+                <div class="grid-3 reveal reveal-stagger" style="margin-top: var(--space-xl);">
+                    <div class="card card-accent">
+                        <h3>Our Mission</h3>
+                        <p>To provide sustainable, high-quality manufacturing solutions that empower fashion brands to scale effectively.</p>
+                    </div>
+                    <div class="card card-accent">
+                        <h3>Our Vision</h3>
+                        <p>To be the most trusted garment manufacturing partner in South Asia for premium women's wear.</p>
+                    </div>
+                    <div class="card card-accent">
+                        <h3>Our Values</h3>
+                        <p>Integrity, Quality, Sustainability, and Innovation in every stitch.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <a href="#" class="logo" style="color: #fff; display: block; margin-bottom: 1rem;">TSARMOIRE</a>
-                    <p>Your premier partner for women's wear manufacturing.</p>
+                    <a href="index.html" class="logo">Tsarmoire</a>
+                    <p>Your premier partner for women's wear manufacturing. Delivering quality, sustainability, and reliability to the global fashion industry.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
@@ -100,7 +114,22 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <!-- Other footer cols same as index -->
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Dresses</a></li>
+                        <li><a href="products.html">Tops &amp; Blouses</a></li>
+                        <li><a href="products.html">Co-ord Sets</a></li>
+                        <li><a href="products.html">Private Label</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="copyright">
                 <p>&copy; 2026 Tsarmoire Manufacturing. All rights reserved.</p>
@@ -108,7 +137,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

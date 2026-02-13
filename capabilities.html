@@ -4,25 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Tsarmoire Manufacturing's capabilities - sampling, fabric sourcing, production, and quality assurance. Comprehensive garment manufacturing from concept to delivery.">
+    <meta property="og:title" content="Capabilities | Tsarmoire Manufacturing">
+    <meta property="og:description" content="Comprehensive manufacturing services from concept to delivery. Sampling, fabric sourcing, production, and quality assurance.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://tsarmoiremanufacturing.com.np/capabilities.html">
     <title>Capabilities | Tsarmoire Manufacturing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <!-- Header (Same as Index) -->
-    <header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header role="banner">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Tsarmoire Mfg.</a>
-            <div class="hamburger">
+            <a href="index.html" class="logo">Tsarmoire</a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
-            <nav>
+            </button>
+            <nav aria-label="Primary navigation">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -35,48 +42,97 @@
         </div>
     </header>
 
-    <section class="bg-secondary" style="padding-top: calc(var(--spacing-xl) + 60px);">
-        <div class="container text-center">
-            <h1>Our Capabilities</h1>
-            <p>Comprehensive manufacturing services from concept to delivery.</p>
-        </div>
-    </section>
+    <main id="main">
 
-    <section>
-        <div class="container">
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Sampling & Development</h3>
-                    <p>Our sampling unit communicates directly with your design team to create perfect prototypes. We
-                        handle pattern making, grading, and fit approval samples quickly.</p>
-                </div>
-                <div class="card">
-                    <h3>Fabric Sourcing</h3>
-                    <p>We have an extensive network of fabric suppliers in Nepal, India, and China. From organic cottons
-                        to premium silks, we can source exact materials or sustainable alternatives.</p>
-                </div>
-                <div class="card">
-                    <h3>Production</h3>
-                    <p>Efficient production lines optimized for high-mix, low to medium volume orders. Flexible MOQs to
-                        support growing brands.</p>
-                </div>
-                <div class="card">
-                    <h3>Quality Assurance</h3>
-                    <p>3-stage QC process: In-line inspection, end-of-line checking, and final pre-shipment audit to
-                        ensure 100% defect-free shipment.</p>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <span class="label-text">What We Do</span>
+                <h1>Our Capabilities</h1>
+                <p>Comprehensive manufacturing services from concept to delivery.</p>
+            </div>
+        </section>
+
+        <!-- Capabilities Grid -->
+        <section aria-labelledby="capabilities-heading">
+            <div class="container">
+                <div class="grid-2 reveal reveal-stagger">
+                    <div class="card card-accent">
+                        <span class="step-number">1</span>
+                        <h3>Sampling &amp; Development</h3>
+                        <p>Our sampling unit communicates directly with your design team to create perfect prototypes. We handle pattern making, grading, and fit approval samples quickly.</p>
+                    </div>
+                    <div class="card card-accent">
+                        <span class="step-number">2</span>
+                        <h3>Fabric Sourcing</h3>
+                        <p>We have an extensive network of fabric suppliers in Nepal, India, and China. From organic cottons to premium silks, we can source exact materials or sustainable alternatives.</p>
+                    </div>
+                    <div class="card card-accent">
+                        <span class="step-number">3</span>
+                        <h3>Production</h3>
+                        <p>Efficient production lines optimized for high-mix, low to medium volume orders. Flexible MOQs to support growing brands.</p>
+                    </div>
+                    <div class="card card-accent">
+                        <span class="step-number">4</span>
+                        <h3>Quality Assurance</h3>
+                        <p>3-stage QC process: in-line inspection, end-of-line checking, and final pre-shipment audit to ensure 100% defect-free shipment.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer (Same as Index) -->
-    <footer>
+        <!-- CTA -->
+        <section class="section-cream">
+            <div class="container text-center reveal">
+                <h2>Ready to see what we can build together?</h2>
+                <p>Let's discuss your production requirements.</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: var(--space-md);">Get in Touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="container">
-            <p class="text-center" style="color: #666;">&copy; 2026 Tsarmoire Manufacturing.</p>
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">Tsarmoire</a>
+                    <p>Your premier partner for women's wear manufacturing. Delivering quality, sustainability, and reliability to the global fashion industry.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="capabilities.html">Capabilities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Dresses</a></li>
+                        <li><a href="products.html">Tops &amp; Blouses</a></li>
+                        <li><a href="products.html">Co-ord Sets</a></li>
+                        <li><a href="products.html">Private Label</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Tsarmoire Manufacturing. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
