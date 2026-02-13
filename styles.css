@@ -426,11 +426,15 @@ footer {
 
   /* Mobile Menu */
   .hamburger {
-    display: block;
+    display: block !important;
     z-index: 1100;
     /* Higher than header and nav-links */
     margin-left: auto;
     /* Push to right */
+    width: 30px;
+    height: 25px;
+    position: relative;
+    background: transparent;
   }
 
   .hamburger.toggle .bar:nth-child(2) {
@@ -443,6 +447,11 @@ footer {
 
   .hamburger.toggle .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Ensure bars are visible */
+  .bar {
+    background-color: #333 !important;
   }
 
   .nav-links {
